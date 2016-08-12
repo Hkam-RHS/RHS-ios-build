@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>RHS Mobile</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  
+  <script src="./js/lunch.js"></script>
+<script src="./js/schedule.js"></script>
+<script src="./js/dates.js"></script>
+<script src="./js/material.min.js"></script>
+</head>
+<body>
+<!--Side Nav-->
+   <ul id="slide-out" class="side-nav">
+    <li><div class="userView">
+      <img class="background" src="images/rhs.jpg">
+      <a href="#!user"><img class="circle" src="images/RHSLogo4.png"></a>
+      <a href="#!name"><span class="white-text name"><p></p></span></a>
+    </div></li>
+    <li><a href="index.html">Home</a></li>
+    <li><div class="divider"></div></li>
+    <li><a href="bulletin.html">Bulletin</a></li>
+    <li><a href="tools.html">Tools</a></li>
+    <li><a href="schedule.html">Schedule Times</a></li>
+  </ul>
+ <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+<!--Insert Content Here-->
+
+  <ul class="collapsible" data-collapsible="accordion">
+    <li>
+      <!--Part one-->
+      <div class="collapsible-header"><i class="material-icons">filter_drama</i>Pythagorean</div>
+      <div class="collapsible-body" style="background-color:#eeeeee"><p>Values will automatically be squared.</p>
+          <div>
+        <input type="number" class='center-align' pattern="-?[0-9]*(\.[0-9]+)?" id="aSquare" style="background-color:#ffe0b2" placeholder="a">
+        <input type="number" class='center-align' pattern="-?[0-9]*(\.[0-9]+)?" id="bSquare" style="background-color:#ffe0b2" placeholder="b">
+       
+    <script>
+      function Pythagorean() {
+        var x = document.getElementById('aSquare').value;
+        var y = document.getElementById('bSquare').value;
+        var xSq = Math.pow(x,2);
+        var ySq = Math.pow(y,2);
+        document.getElementById('showPythag').innerHTML = "C = " + Math.sqrt(xSq + ySq).toFixed(6);
+      }
+    </script>
+    </div>
+
+  <center><span id='showPythag'></span>
+  <a class="waves-effect waves-light btn" onclick="Pythagorean();">Find</a>
+  </center>
+
+  </div>
+<!--End part one-->
+
+      
+    </li>
+    <li>
+<!--Begin part 2-->
+    <div class="collapsible-header"><i class="material-icons">filter_drama</i>Area of a Circle</div>
+      <div class="collapsible-body" style="background-color:#eeeeee"><p>Radius will automatically be squared.</p>
+          <div>
+        <input type="number" class='center-align' pattern="-?[0-9]*(\.[0-9]+)?" id="radius" style="background-color:#ffe0b2" placeholder="enter radius">
+
+       
+    <script>
+      function circleArea() {
+        var x = document.getElementById('radius').value;
+        var y = Math.pow(x,2);
+        var pi = 3.14159265359;
+        document.getElementById('showCircleArea').innerHTML = "Area = " + (y * pi).toFixed(5);
+      }
+    </script>
+    </div>
+
+  <center><span id='showCircleArea'></span>
+  <a class="waves-effect waves-light btn" onclick="circleArea();">Find</a>
+  </center>
+
+  </div>
+  <!--End part 2-->
+    </li>
+    <li>
+<!--Begin part 3-->
+    <div class="collapsible-header"><i class="material-icons">filter_drama</i>Slope & Intercept</div>
+      <div class="collapsible-body" style="background-color:#eeeeee">
+          <div>
+        <input type="number" class='center-align' pattern="-?[0-9]*(\.[0-9]+)?" id="enterX1" style="background-color:#ffe0b2" placeholder="x1">
+        <input type="number" class='center-align' pattern="-?[0-9]*(\.[0-9]+)?" id="enterX2" style="background-color:#ffe0b2" placeholder="x2">
+        <input type="number" class='center-align' pattern="-?[0-9]*(\.[0-9]+)?" id="enterY1" style="background-color:#ffe0b2" placeholder="y1">
+        <input type="number" class='center-align' pattern="-?[0-9]*(\.[0-9]+)?" id="enterY2" style="background-color:#ffe0b2" placeholder="y2">
+
+       
+    <script>
+function slopeLine() {
+  var y1 = document.getElementById('enterY1').value;
+  var y2 = document.getElementById('enterY2').value;
+  var x1 = document.getElementById('enterX1').value;
+  var x2 = document.getElementById('enterX2').value;
+  var solveY = (y2 - y1);
+  var solveX = (x2 - x1);
+  var solveM = (solveY/solveX);
+  var solveB = (y1 - (solveM * x1 ));
+  var intercept = ((solveM * solveX) + solveB);
+  document.getElementById('showM').innerHTML = "m = " + solveM.toFixed(4);
+  document.getElementById('showB').innerHTML = "b = " + solveB.toFixed(4);
+}
+
+    </script>
+    </div>
+
+  <center><span id='showM'></span><br><span id='showB'></span><br>
+  <a class="waves-effect waves-light btn" onclick="slopeLine();">Find</a>
+  </center>
+
+  </div>
+<!--End part 3-->
+    </li>
+    <li>
+    <!--Begin part 4-->
+    <div class="collapsible-header"><i class="material-icons">filter_drama</i>Sphere Volume</div>
+      <div class="collapsible-body" style="background-color:#eeeeee">
+          <div>
+        <input type="number" class='center-align' pattern="-?[0-9]*(\.[0-9]+)?" id="radius2" style="background-color:#ffe0b2" placeholder="enter radius">
+
+       
+    <script>
+      function volOfSphere() {
+        var x = document.getElementById('radius2').value;
+        var a = ((4/3 * 3.14159265359) * Math.pow(x, 3)).toFixed(4);
+        document.getElementById('showVol').innerHTML = a;
+      }
+
+    </script>
+    </div>
+
+  <center><span id='showVol'></span><br>
+  <a class="waves-effect waves-light btn" onclick="volOfSphere();">Find</a>
+  </center>
+
+  </div>
+<!--End part 4-->
+      
+    </li>
+  </ul>
+        
+
+
+
+
+
+
+<!--End Insert Content-->
+  <!--  Scripts-->
+  <script src="js/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  
+  <script>showFull();</script>
+
+<script>bell();</script>
+
+<script>lunchDay();</script>
+
+  </body>
+</html>

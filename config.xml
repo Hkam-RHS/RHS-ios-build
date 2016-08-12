@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<widget xmlns = "http://www.w3.org/ns/widgets"
+		xmlns:gap = "http://phonegap.com/ns/1.0"
+		xmlns:android = "http://schemas.android.com/apk/res/android"
+		id        = "com.rhswebdev.app"
+		versionCode="1"
+		version   = "1.0">
+		<name>R3 Mobile App</name>
+		<description></description>
+		<author href="http://www.rhswebdev.com" email="webdevrhs@gmail.com">RHS WebDev</author>
+		<feature name="http://api.phonegap.com/1.0/battery"/>
+		<feature name="http://api.phonegap.com/1.0/camera"/>
+		<feature name="http://api.phonegap.com/1.0/contacts"/>
+		<feature name="http://api.phonegap.com/1.0/file"/>
+		<feature name="http://api.phonegap.com/1.0/geolocation"/>
+		<feature name="http://api.phonegap.com/1.0/media"/>
+		<feature name="http://api.phonegap.com/1.0/network"/>
+		<feature name="http://api.phonegap.com/1.0/notification"/>
+<plugin name="undefined" source="npm"  />
+<plugin name="undefined" source="npm"  />
+<preference name="phonegap-version" value="cli-5.2.0" />
+<preference name="android-build-tool" value="gradle" />
+<preference name="orientation" value="default" />
+<preference name="fullscreen" value="false" />
+<preference name="target-device" value="universal" />
+<preference name="webviewbounce" value="true" />
+<preference name="prerendered-icon" value="true" />
+<preference name="stay-in-webview" value="true" />
+<preference name="ios-statusbarstyle" value="default" />
+<preference name="detect-data-types" value="true" />
+<preference name="exit-on-suspend" value="true" />
+<preference name="show-splash-screen-spinner" value="true" />
+<preference name="auto-hide-splash-screen" value="true" />
+<preference name="FadeSplashScreen " value="true" />
+<preference name="EnableViewportScale" value="true" />
+<preference name="MediaPlaybackRequiresUserAction" value="true" />
+<preference name="AllowInlineMediaPlayback" value="true" />
+<preference name="BackupWebStorage" value="cloud" />
+<preference name="TopActivityIndicator" value="gray" />
+<preference name="KeyboardDisplayRequiresUserAction" value="true" />
+<preference name="KeyboardShrinksView " value="true" />
+<preference name="HideKeyboardFormAccessoryBar" value="true" />
+<preference name="SuppressesIncrementalRendering" value="true" />
+<preference name="windows-identity-name" value="" />
+<preference name="android-minSdkVersion" value="16" />
+<preference name="android-installLocation" value="internalOnly" />
+<preference name="SplashScreenDelay" value="5000" />
+<preference name="ErrorUrl" value="" />
+<preference name="BackgroundColor" value="0x000000" />
+<preference name="DisallowOverscroll" value="true" />
+<preference name="LoadingDialog" value="," />
+<preference name="LoadUrlTimeoutValue" value="20000" />
+		<platform name="ios">
+		</platform>
+		<platform name="android">
+		<icon src="images/logo.png" qualifier="ldpi" />
+		<icon src="images/logo.png" qualifier="mdpi" />
+		<icon src="images/logo.png" qualifier="hdpi" />
+		<icon src="images/logo.png" qualifier="xhdpi" />
+		<icon src="images/logo.png" qualifier="xxhdpi" />
+		<icon src="images/logo.png" qualifier="xxxhdpi" />
+		</platform>
+		<platform name="winphone">
+		</platform>
+		 <icon src="icon.png" />
+<access origin="*" />
+<access origin="http://google.com" subdomains="true" />
+<access origin="*" subdomains="true" />
+<access origin="*" />
+<access origin="http://google.com" subdomains="true" />
+<access origin="*" subdomains="true" />
+</widget>
