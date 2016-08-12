@@ -50,17 +50,20 @@
 <preference name="DisallowOverscroll" value="true" />
 <preference name="LoadingDialog" value="," />
 <preference name="LoadUrlTimeoutValue" value="20000" />
+
+<icon src="images/RHSLogo.png" />
+    <icon src="images/RHSLogo.png"              gap:platform="ios"        width="57" height="57" />
+    <icon src="images/RHSLogo.png"             gap:platform="ios"        width="72" height="72" />
+    <icon src="images/RHSLogo.png"         gap:platform="ios"        width="114" height="114" />
+    <icon src="images/RHSLogo.png"         gap:platform="ios"        width="144" height="144" />
+
 		<platform name="ios">
-		</platform>
-		<platform name="android">
 		<icon src="images/logo.png" qualifier="ldpi" />
 		<icon src="images/logo.png" qualifier="mdpi" />
 		<icon src="images/logo.png" qualifier="hdpi" />
 		<icon src="images/logo.png" qualifier="xhdpi" />
 		<icon src="images/logo.png" qualifier="xxhdpi" />
 		<icon src="images/logo.png" qualifier="xxxhdpi" />
-		</platform>
-		<platform name="winphone">
 		</platform>
 		 <icon src="icon.png" />
 <access origin="*" />
