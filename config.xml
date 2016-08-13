@@ -3,8 +3,8 @@
 		xmlns:gap = "http://phonegap.com/ns/1.0"
 		xmlns:android = "http://schemas.android.com/apk/res/android"
 		id        = "com.rhswebdev.app"
-		versionCode=""
-		version   = "1.0">
+		versionCode="1.0.0"
+		version   = "1.0.0">
 		<name>R3 Mobile App</name>
 		<description></description>
 		<author href="http://www.rhswebdev.com" email="webdevrhs@gmail.com">RHS WebDev</author>
