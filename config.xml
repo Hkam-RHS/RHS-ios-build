@@ -1,23 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-	<widget xmlns = "http://www.w3.org/ns/widgets"
+  <widget xmlns = "http://www.w3.org/ns/widgets"
 		xmlns:gap = "http://phonegap.com/ns/1.0"
 		xmlns:android = "http://schemas.android.com/apk/res/android"
 		id        = "com.rhswebdev.app"
-		versionCode="1"
-		version   = "1.0">
+		versionCode="1.0.0"
+		version   = "1.0.0">
 		<name>R3 Mobile App</name>
-		<description></description>
+		<description>IOS Mobile App</description>
 		<author href="http://www.rhswebdev.com" email="webdevrhs@gmail.com">RHS WebDev</author>
-		<feature name="http://api.phonegap.com/1.0/battery"/>
-		<feature name="http://api.phonegap.com/1.0/camera"/>
-		<feature name="http://api.phonegap.com/1.0/contacts"/>
-		<feature name="http://api.phonegap.com/1.0/file"/>
-		<feature name="http://api.phonegap.com/1.0/geolocation"/>
-		<feature name="http://api.phonegap.com/1.0/media"/>
+
 		<feature name="http://api.phonegap.com/1.0/network"/>
 		<feature name="http://api.phonegap.com/1.0/notification"/>
-<plugin name="undefined" source="npm"  />
-<plugin name="undefined" source="npm"  />
+
 <preference name="phonegap-version" value="cli-5.2.0" />
 <preference name="android-build-tool" value="gradle" />
 <preference name="orientation" value="default" />
@@ -51,25 +45,43 @@
 <preference name="LoadingDialog" value="," />
 <preference name="LoadUrlTimeoutValue" value="20000" />
 
+<platform name="ios">
+
+<icon src="images/RHSLogo.png" width="180" height="180" />
+
+<icon src="images/RHSLogo.png" width="60" height="60" />
+<icon src="images/RHSLogo.png" width="120" height="120" />
+
+<icon src="images/RHSLogo.png" width="76" height="76"/>
+<icon src="images/RHSLogo.png" width="152" height="152"/>
+
+
 <icon src="images/RHSLogo.png" />
     <icon src="images/RHSLogo.png"              gap:platform="ios"        width="57" height="57" />
     <icon src="images/RHSLogo.png"             gap:platform="ios"        width="72" height="72" />
     <icon src="images/RHSLogo.png"         gap:platform="ios"        width="114" height="114" />
     <icon src="images/RHSLogo.png"         gap:platform="ios"        width="144" height="144" />
+    
+<icon src="images/icon-40.png" width="40" height="40"/>
+<icon src="images/icon-40-2x.png" width="80" height="80"/>
 
-		<platform name="ios">
-		<icon src="images/logo.png" qualifier="ldpi" />
-		<icon src="images/logo.png" qualifier="mdpi" />
-		<icon src="images/logo.png" qualifier="hdpi" />
-		<icon src="images/logo.png" qualifier="xhdpi" />
-		<icon src="images/logo.png" qualifier="xxhdpi" />
-		<icon src="images/logo.png" qualifier="xxxhdpi" />
-		</platform>
+<icon src="images/icon.png" width="57" height="57"/>
+<icon src="images/icon-2x.png" width="114" height="114"/>
+
+<icon src="images/icon-72.png" width="72" height="72"/>
+<icon src="images/icon-72-2x.png" width="144" height="144"/>
+
+<icon src="images/icon-small.png" width="29" height="29"/>
+<icon src="images/icon-small-2x.png" width="58" height="58"/>
+
+<icon src="images/icon-50.png" width="50" height="50"/>
+<icon src="images/icon-50-2x.png" width="100" height="100"/>
+<platform/>
+
 		 <icon src="icon.png" />
 <access origin="*" />
 <access origin="http://google.com" subdomains="true" />
 <access origin="*" subdomains="true" />
-<access origin="*" />
 <access origin="http://google.com" subdomains="true" />
 <access origin="*" subdomains="true" />
 </widget>
