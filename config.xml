@@ -52,10 +52,10 @@
 <preference name="LoadUrlTimeoutValue" value="20000" />
 
 <icon src="images/RHSLogo.png" />
-    <icon src="images/RHSLogo.png"              gap:platform="ios"        width="360" height="359" />
-    <icon src="images/RHSLogo1.png"             gap:platform="ios"        width="48" height="48" />
-    <icon src="images/RHSLogo2.png"         gap:platform="ios"        width="512" height="512" />
-    <icon src="images/RHSLogo4.png"         gap:platform="ios"        width="144" height="144" />
+    <icon src="images/RHSLogo.png"              gap:platform="ios"        width="57" height="57" />
+    <icon src="images/RHSLogo.png"             gap:platform="ios"        width="72" height="72" />
+    <icon src="images/RHSLogo.png"         gap:platform="ios"        width="114" height="114" />
+    <icon src="images/RHSLogo.png"         gap:platform="ios"        width="144" height="144" />
 
 		<platform name="ios">
 		<icon src="images/logo.png" qualifier="ldpi" />
